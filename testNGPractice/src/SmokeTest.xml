@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Smoke testing suite">
+
+	<test name="Test for release 10.3">
+
+		<classes>
+			<class name="sauceDemoTestNgTest.SauceDemoTestNG"></class>
+
+			<class name="sauceDemoTestNgTest.EndToEndTesting"></class>
+
+
+
+		</classes>
+
+
+
+	</test>
+
+
+
+
+</suite>

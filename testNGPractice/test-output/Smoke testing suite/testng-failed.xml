@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke testing suite]">
+  <test name="Test for release 10.3(failed)">
+    <classes>
+      <class name="sauceDemoTestNgTest.EndToEndTesting">
+        <methods>
+          <include name="postTest"/>
+          <include name="preTest"/>
+        </methods>
+      </class> <!-- sauceDemoTestNgTest.EndToEndTesting -->
+      <class name="sauceDemoTestNgTest.SauceDemoTestNG">
+        <methods>
+          <include name="beforeEachTest"/>
+          <include name="testStart"/>
+          <include name="failedLoginValidation"/>
+          <include name="testEnd"/>
+        </methods>
+      </class> <!-- sauceDemoTestNgTest.SauceDemoTestNG -->
+    </classes>
+  </test> <!-- Test for release 10.3(failed) -->
+</suite> <!-- Failed suite [Smoke testing suite] -->

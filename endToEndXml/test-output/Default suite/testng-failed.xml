@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="sauceDemoTestNgTest.EndToEndTesting">
+        <methods>
+          <include name="testCheckOutStepTwo"/>
+          <include name="testInventory"/>
+          <include name="testCheckOutStepOne"/>
+          <include name="postTest"/>
+          <include name="testLogin"/>
+          <include name="testCartPage"/>
+          <include name="preTest"/>
+        </methods>
+      </class> <!-- sauceDemoTestNgTest.EndToEndTesting -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Data_driven_testing_suite">
+              <span class="suite-name border-failed">Data driven testing suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Data_driven_testing_suite">
+                    <span>C:\Users\HP USER\Desktop\javaWorkspace\testNGPractice\src\DataDrivenTesting.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Data_driven_testing_suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Data_driven_testing_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Data_driven_testing_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Data_driven_testing_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Data_driven_testing_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Data_driven_testing_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Data_driven_testing_suite" class="hide-methods failed suite-Data_driven_testing_suite"> (hide)</a> <!-- hide-methods failed suite-Data_driven_testing_suite -->
+                      <a href="#" panel-name="suite-Data_driven_testing_suite" class="show-methods failed suite-Data_driven_testing_suite"> (show)</a> <!-- show-methods failed suite-Data_driven_testing_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Data_driven_testing_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_driven_testing_suite" title="sauceDemoTestNgTest.LoginDatadriven" hash-for-method="loginDataDriventest(standard_user, secret_sauce, https://www.saucedemo.com/inventory.html)">loginDataDriventest(standard_user, secret_sauce, https://www.saucedemo.com/inventory.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_driven_testing_suite" title="sauceDemoTestNgTest.LoginDatadriven" hash-for-method="loginDataDriventest(locked_out_user, secret_sauce, https://www.saucedemo.com/)">loginDataDriventest(locked_out_user, secret_sauce, https://www.saucedemo.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_driven_testing_suite" title="sauceDemoTestNgTest.LoginDatadriven" hash-for-method="loginDataDriventest(problem_user, secret_sauce, https://www.saucedemo.com/inventory.html)">loginDataDriventest(problem_user, secret_sauce, https://www.saucedemo.com/inventory.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Data_driven_testing_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Data_driven_testing_suite" class="panel Data_driven_testing_suite">
+          <div class="suite-Data_driven_testing_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sauceDemoTestNgTest.LoginDatadriven</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDataDriventest(standard_user, secret_sauce, https://www.saucedemo.com/inventory.html)">
+                  </a> <!-- loginDataDriventest(standard_user, secret_sauce, https://www.saucedemo.com/inventory.html) -->
+                  <span class="method-name">loginDataDriventest</span>
+                  <span class="parameters">(standard_user, secret_sauce, https://www.saucedemo.com/inventory.html)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at sauceDemoElementsNG.NgLoginElementSauceDemo.findUserName(NgLoginElementSauceDemo.java:15)
+	at sauceDemoTestNgTest.LoginDatadriven.loginDataDriventest(LoginDatadriven.java:46)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDataDriventest(locked_out_user, secret_sauce, https://www.saucedemo.com/)">
+                  </a> <!-- loginDataDriventest(locked_out_user, secret_sauce, https://www.saucedemo.com/) -->
+                  <span class="method-name">loginDataDriventest</span>
+                  <span class="parameters">(locked_out_user, secret_sauce, https://www.saucedemo.com/)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at sauceDemoElementsNG.NgLoginElementSauceDemo.findUserName(NgLoginElementSauceDemo.java:15)
+	at sauceDemoTestNgTest.LoginDatadriven.loginDataDriventest(LoginDatadriven.java:46)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDataDriventest(problem_user, secret_sauce, https://www.saucedemo.com/inventory.html)">
+                  </a> <!-- loginDataDriventest(problem_user, secret_sauce, https://www.saucedemo.com/inventory.html) -->
+                  <span class="method-name">loginDataDriventest</span>
+                  <span class="parameters">(problem_user, secret_sauce, https://www.saucedemo.com/inventory.html)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at sauceDemoElementsNG.NgLoginElementSauceDemo.findUserName(NgLoginElementSauceDemo.java:15)
+	at sauceDemoTestNgTest.LoginDatadriven.loginDataDriventest(LoginDatadriven.java:46)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_driven_testing_suite-class-failed -->
+        </div> <!-- panel Data_driven_testing_suite -->
+        <div panel-name="test-xml-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP USER\Desktop\javaWorkspace\testNGPractice\src\DataDrivenTesting.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Data driven testing suite&quot;&gt;
+  &lt;test name=&quot;login standard user&quot;&gt;
+    &lt;parameter name=&quot;expectedUrl&quot; value=&quot;https://www.saucedemo.com/inventory.html&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;secret_sauce&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;standard_user&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sauceDemoTestNgTest.LoginDatadriven&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- login standard user --&gt;
+  &lt;test name=&quot;login locked out user&quot;&gt;
+    &lt;parameter name=&quot;expectedUrl&quot; value=&quot;https://www.saucedemo.com/&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;secret_sauce&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;locked_out_user&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sauceDemoTestNgTest.LoginDatadriven&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- login locked out user --&gt;
+  &lt;test name=&quot;login problem_user &quot;&gt;
+    &lt;parameter name=&quot;expectedUrl&quot; value=&quot;https://www.saucedemo.com/inventory.html&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;secret_sauce&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;problem_user&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sauceDemoTestNgTest.LoginDatadriven&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- login problem_user  --&gt;
+&lt;/suite&gt; &lt;!-- Data driven testing suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Data driven testing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">login standard user (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">login locked out user (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">login problem_user  (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Data driven testing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Data driven testing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Data_driven_testing_suite');
+function tableData_Data_driven_testing_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginDataDriventest')
+data.setCell(0, 2, 'sauceDemoTestNgTest.LoginDatadriven')
+data.setCell(0, 3, 12);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginDataDriventest')
+data.setCell(1, 2, 'sauceDemoTestNgTest.LoginDatadriven')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginDataDriventest')
+data.setCell(2, 2, 'sauceDemoTestNgTest.LoginDatadriven')
+data.setCell(2, 3, 0);
+window.suiteTableData['Data_driven_testing_suite']= { tableData: data, tableDiv: 'times-div-Data_driven_testing_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 ms</span>
+              <div id="times-div-Data_driven_testing_suite">
+              </div> <!-- times-div-Data_driven_testing_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Data driven testing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Data_driven_testing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">sauceDemoTestNgTest.LoginDatadriven</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testStart</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDataDriventest(standard_user, secret_sauce, https://www.saucedemo.com/inventory.html)</span>
+                <span class="method-start">3866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">testEnd</span>
+                <span class="method-start">3878 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">testStart</span>
+                <span class="method-start">4003 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDataDriventest(locked_out_user, secret_sauce, https://www.saucedemo.com/)</span>
+                <span class="method-start">6158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">testEnd</span>
+                <span class="method-start">6158 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">testStart</span>
+                <span class="method-start">6174 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDataDriventest(problem_user, secret_sauce, https://www.saucedemo.com/inventory.html)</span>
+                <span class="method-start">8419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">testEnd</span>
+                <span class="method-start">8424 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

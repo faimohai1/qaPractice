@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EndToEndTestingWithXmlDataDriven]">
+  <parameter name="zip" value="22204"/>
+  <parameter name="firstName" value="Faisal"/>
+  <parameter name="lastName" value="Islam"/>
+  <parameter name="password" value="secret_sauce"/>
+  <parameter name="desiredUrlTwo" value="https://www.saucedemo.com/checkout-step-two.html"/>
+  <parameter name="desiredUrlOne" value="https://www.saucedemo.com/checkout-step-one.html"/>
+  <parameter name="userName" value="problem_user"/>
+  <parameter name="expectedProd" value="Sauce Labs Backpack"/>
+  <parameter name="desiredUrlFinal" value="https://www.saucedemo.com/checkout-complete.html"/>
+  <parameter name="desiredUrl" value="https://www.saucedemo.com/inventory.html"/>
+  <test name="EndToEndTestingStandardUser(failed)">
+    <parameter name="zip" value="22204"/>
+    <parameter name="firstName" value="Faisal"/>
+    <parameter name="lastName" value="Islam"/>
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="desiredUrlTwo" value="https://www.saucedemo.com/checkout-step-two.html"/>
+    <parameter name="desiredUrlOne" value="https://www.saucedemo.com/checkout-step-one.html"/>
+    <parameter name="userName" value="standard_user"/>
+    <parameter name="expectedProd" value="Sauce Labs Backpack"/>
+    <parameter name="desiredUrlFinal" value="https://www.saucedemo.com/checkout-complete.html"/>
+    <parameter name="desiredUrl" value="https://www.saucedemo.com/inventory.html"/>
+    <classes>
+      <class name="sauceDemoTestNgTest.EndToEndTesting">
+        <methods>
+          <include name="testCheckOutStepTwo" invocation-numbers="0"/>
+          <include name="testCheckOutStepOne" invocation-numbers="0"/>
+          <include name="postTest"/>
+          <include name="postTest"/>
+          <include name="preTest"/>
+          <include name="preTest"/>
+        </methods>
+      </class> <!-- sauceDemoTestNgTest.EndToEndTesting -->
+    </classes>
+  </test> <!-- EndToEndTestingStandardUser(failed) -->
+  <test name="EndToEndTestingProblemUser(failed)">
+    <parameter name="zip" value="22204"/>
+    <parameter name="firstName" value="Faisal"/>
+    <parameter name="lastName" value="Islam"/>
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="desiredUrlTwo" value="https://www.saucedemo.com/checkout-step-two.html"/>
+    <parameter name="desiredUrlOne" value="https://www.saucedemo.com/checkout-step-one.html"/>
+    <parameter name="userName" value="problem_user"/>
+    <parameter name="expectedProd" value="Sauce Labs Backpack"/>
+    <parameter name="desiredUrlFinal" value="https://www.saucedemo.com/checkout-complete.html"/>
+    <parameter name="desiredUrl" value="https://www.saucedemo.com/inventory.html"/>
+    <classes>
+      <class name="sauceDemoTestNgTest.EndToEndTesting">
+        <methods>
+          <include name="testCheckOutStepTwo" invocation-numbers="0"/>
+          <include name="testInventory" invocation-numbers="0"/>
+          <include name="testCheckOutStepOne" invocation-numbers="0"/>
+          <include name="postTest"/>
+          <include name="postTest"/>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="testCartPage" invocation-numbers="0"/>
+          <include name="preTest"/>
+          <include name="preTest"/>
+        </methods>
+      </class> <!-- sauceDemoTestNgTest.EndToEndTesting -->
+    </classes>
+  </test> <!-- EndToEndTestingProblemUser(failed) -->
+</suite> <!-- Failed suite [EndToEndTestingWithXmlDataDriven] -->

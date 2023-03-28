@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Data driven testing suite">
+
+	<test name="login standard user">
+		<parameter name="username" value="standard_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+		<parameter name="expectedUrl"
+			value="https://www.saucedemo.com/inventory.html"></parameter>
+		<classes>
+			<class name="sauceDemoTestNgTest.LoginDatadriven">
+
+			</class>
+		</classes>
+
+	</test>
+
+	<test name="login locked out user">
+		<parameter name="username" value="locked_out_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+		<parameter name="expectedUrl" value="https://www.saucedemo.com/"></parameter>
+
+		<classes>
+			<class name="sauceDemoTestNgTest.LoginDatadriven">
+
+			</class>
+		</classes>
+
+	</test>
+	<test name="login problem_user ">
+		<parameter name="username" value="problem_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+		<parameter name="expectedUrl" value="https://www.saucedemo.com/inventory.html"></parameter>
+
+		<classes>
+			<class name="sauceDemoTestNgTest.LoginDatadriven">
+
+			</class>
+		</classes>
+
+	</test>
+
+
+
+</suite>

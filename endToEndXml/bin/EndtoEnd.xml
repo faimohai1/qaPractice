@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="EndToEndTestingWithXmlDataDriven">
+	<test name="EndToEndTestingStandardUser">
+
+
+		<parameter name="desiredUrl"
+			value="https://www.saucedemo.com/inventory.html"></parameter>
+		<parameter name="userName" value="standard_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+
+		<parameter name="expectedProd" value="Sauce Labs Backpack"></parameter>
+
+		<parameter name="desiredUrlOne"
+			value="https://www.saucedemo.com/checkout-step-one.html"></parameter>
+
+		<parameter name="desiredUrlTwo"
+			value="https://www.saucedemo.com/checkout-step-two.html"></parameter>
+		<parameter name="firstName" value="Faisal"></parameter>
+		<parameter name="lastName" value="Islam"></parameter>
+		<parameter name="zip" value="22204"></parameter>
+
+		<parameter name="desiredUrlFinal"
+			value="https://www.saucedemo.com/checkout-complete.html"></parameter>
+
+
+
+		<classes>
+			<class name="sauceDemoTestNgTest.EndToEndTesting"></class>
+		</classes>
+		
+	</test>
+
+
+
+
+	<test name="EndToEndTestingProblemUser">
+
+
+		<parameter name="desiredUrl"
+			value="https://www.saucedemo.com/inventory.html"></parameter>
+		<parameter name="userName" value="problem_user"></parameter>
+		<parameter name="password" value="secret_sauce"></parameter>
+
+		<parameter name="expectedProd" value="Sauce Labs Backpack"></parameter>
+
+		<parameter name="desiredUrlOne"
+			value="https://www.saucedemo.com/checkout-step-one.html"></parameter>
+
+		<parameter name="desiredUrlTwo"
+			value="https://www.saucedemo.com/checkout-step-two.html"></parameter>
+		<parameter name="firstName" value="Faisal"></parameter>
+		<parameter name="lastName" value="Islam"></parameter>
+		<parameter name="zip" value="22204"></parameter>
+
+		<parameter name="desiredUrlFinal"
+			value="https://www.saucedemo.com/checkout-complete.html"></parameter>
+
+
+
+		<classes>
+			<class name="sauceDemoTestNgTest.EndToEndTesting"></class>
+		</classes>
+		
+	</test>
+
+
+
+
+
+</suite>
